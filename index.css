@@ -1,0 +1,417 @@
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1.1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;   
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:''; content:none;
+
+}
+/*  END RESET */
+
+
+/* STYLING GENERELT */
+.fronsegoder {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#header {
+    display: inline-flex;
+    list-style: none;
+}
+
+h1 {
+    background-color: lawngreen;
+    text-align: center;
+}
+
+.betjening {
+    background-color: yellow;
+    text-align: center;
+}
+.selvbetjening {
+    list-style: none;
+    display: inline-flex;
+}
+
+.overstemenu {
+    background-color: darkkhaki;
+    text-align: center;
+}
+.menutop {
+    list-style: none;
+    display: inline-flex;    
+}
+
+#kompletboks {
+    list-style: none;
+    background-color: aqua;
+}
+
+#deleboks {
+    list-style: none;
+    background-color: orange;
+}
+
+#beskyttelseboks {
+    list-style: none;
+    background-color: palevioletred;
+}
+
+#apparelboks {
+    list-style: none;
+    background-color: green;
+}
+
+#rampeboks {
+    list-style: none;
+    background-color: darkgrey;
+}
+
+.nyheder {
+    list-style: none;
+    background-color: pink;
+}
+
+#top3lobehjul {
+    list-style: none;
+    background-color: brown;
+}
+
+#top3deck {
+    list-style: none;
+    background-color: orchid;
+}
+
+#top3bars {
+    list-style: none;
+    background-color: wheat;
+}
+
+#top3hjul {
+    list-style: none;
+    background-color: seagreen;
+}
+
+#top3hjelme {
+    list-style: none;
+    background-color: crimson;
+}
+
+#top3knabeskyttere {
+    list-style: none;
+    background-color: lavender;
+}
+
+#sporgsmal{
+    list-style: none;
+   background-color: deepskyblue; 
+}
+
+.support {
+    list-style: none;
+    background-color: greenyellow;
+}
+
+.scootershop {
+    list-style: none;
+    background-color: darkcyan;
+}
+
+.juridisk {
+    list-style: none;
+    background-color: skyblue;
+}
+
+/* STYLING GENERELT */
+
+
+/* GRID AREAS */
+.fronsegoder {
+    grid-area: header;
+}
+    
+#overskrift {
+    grid-area: titel;
+}
+
+.betjening {
+    grid-area: selvbetjening;
+}
+
+.overstemenu {
+    grid-area: overstemenu;
+}
+
+.menuleft {
+    grid-area: menuleft;
+}
+
+#kompletboks {
+    grid-area: komplet;
+}
+
+#deleboks {
+    grid-area: dele;
+}
+
+#beskyttelseboks {
+    grid-area: beskyttelse;
+}
+
+#apparelboks {
+    grid-area: apparel;
+}
+
+#rampeboks {
+    grid-area: rampe;
+}
+
+
+.nyheder {
+    grid-area: nyheder;
+}
+
+.top3 {
+    grid-area: top3;
+}
+
+#top3lobehjul {
+    grid-area: top3lobehjul;
+}
+
+#top3deck {
+    grid-area: top3deck;
+}
+
+#top3bars {
+    grid-area: top3bars;
+}
+
+#top3hjul {
+    grid-area: top3hjul;
+}
+
+#top3hjelme {
+    grid-area: top3hjelme;
+}
+
+#top3knabeskyttere {
+    grid-area: top3knabeskyttere;
+}
+
+footer {
+    grid-area: footer;
+}
+/* GRID AREAS */
+
+
+/* GRID AREAS FOR IKONER */
+#fragtikon {
+   grid-area: fragtikon;
+}
+#bytteretikon {
+    grid-area: bytteretikon;
+}
+#anmeldelseikon {
+    grid-area: anmeldelseikon;
+}
+#produkterikon {
+    grid-area: produkterikon;
+}
+/* GRID AREAS FOR IKONER */
+
+
+/* GRID FOR HEADER */
+#header {
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+    grid-gap: 8em;
+    grid-template-areas:
+        "fragtikon bytteretikon anmeldelseikon produkterikon";
+}
+/* GRID FOR HEADER */
+
+
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR MOBIL */
+@media screen and (max-width: 700px) {
+    #grid {
+        display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: (6, 1fr);
+            grid-gap: 5px;
+            grid-template-areas: 
+                "header"
+                "selvbetjening"
+                "overstemenu"
+                "nyheder"
+                "top3"
+                "footer";
+        } 
+    
+    #overskrift {
+            display: none;
+        }
+    
+    .menuleft {
+            display: none;
+        }  
+    
+/* RESPONSIVE IMAGES MOBILE */
+    .fronsegoder {
+    width: 100%;
+    }
+    
+    .ikonheader {
+        max-width: 150%;
+    }
+
+    .betjening {
+        width: 100%;
+    }
+
+    .ikonbetjening {
+        max-width: 65%;
+    }
+
+    .overstemenu {
+        width: 100%;
+    }
+
+    .ikonmenu {
+        max-width: 100%;
+    }  
+/* RESPONSIVE IMAGES MOBILE */
+}
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR MOBIL */
+
+
+
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR TABLET */
+@media screen and (min-width: 700px) {
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 5px;
+        grid-template-areas:
+            "header header header"
+            "selvbetjening selvbetjening selvbetjening"
+            "overstemenu overstemenu overstemenu"
+            "menuleft nyheder nyheder"
+            "menuleft top3 top3"
+            "menuleft top3 top3"
+            "menuleft top3 top3"
+            "footer footer footer";
+    }
+    
+    #overskrift {
+        display: none;
+    }
+
+/* RESPONSIVE IMAGES TABLET */
+    .fronsegoder {
+    width: 100%;
+    }
+    
+    .ikonheader {
+        max-width: 50%;
+    }
+
+    .betjening {
+        width: 100%;
+    }
+
+    .ikonbetjening {
+        max-width: 100%;
+    }
+
+    .overstemenu {
+        width: 100%;
+    }
+
+    .ikonmenu {
+        max-width: 100%;
+    }
+/* RESPONSIVE IMAGES TABLET */   
+}
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR TABLET */
+
+
+
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR DESKTOP */
+@media screen and (min-width: 1000px) {
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1.5fr 0.8fr 0.4fr 1.5fr 1fr 1fr 0.3fr;
+        grid-gap: 5px;
+        grid-template-areas:
+            "header header header header"
+            "titel titel titel titel"
+            "selvbetjening selvbetjening selvbetjening selvbetjening"
+            "overstemenu overstemenu overstemenu overstemenu"
+            "menuleft nyheder nyheder nyheder"
+            "menuleft nyheder nyheder nyheder"
+            "menuleft top3 top3 top3"
+            "menuleft top3 top3 top3"
+            "footer footer footer footer";
+    }
+    
+    .menuleft {
+        display: block;
+    }
+    
+    #overskrift {
+        display: block;
+    }
+
+/* RESPONSIVE IMAGES DESKTOP */    
+    .fronsegoder {
+    width: 100%;
+    }
+    
+    .ikonheader {
+        max-width: 25%;
+    }
+
+    .betjening {
+        width: 100%;
+    }
+
+    .ikonbetjening {
+        max-width: 100%;
+    }
+
+    .overstemenu {
+        width: 100%;
+    }
+
+    .ikonmenu {
+        max-width: 100%;
+    }
+/* RESPONSIVE IMAGES DESKTOP */
+}
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR DESKTOP */
+
+
+
