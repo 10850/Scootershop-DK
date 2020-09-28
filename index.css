@@ -29,8 +29,18 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 
 /* STYLING GENERELT */
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #12006E;
+    color: dodgerblue;
+}
+
 .fronsegoder {
-    background-color: aquamarine;
+    background-color: deepskyblue;
     text-align: center;
 }
 
@@ -45,7 +55,6 @@ h1 {
 }
 
 .betjening {
-    background-color: yellow;
     text-align: center;
 }
 
@@ -54,10 +63,20 @@ h1 {
     display: inline-flex;
 }
 
-.overstemenu {
-    background-color: darkkhaki;
-    text-align: center;
+#sogefelt {
+    background-color: gainsboro;
+    border-radius: 5px;
+    width: 100%;
 }
+
+.overstemenu {
+    text-align: center;
+    border: solid;
+    border-right: 0;
+    border-left: 0;
+    border-color: steelblue;
+}
+
 .menutop {
     list-style: none;
     display: inline-flex;    
@@ -91,29 +110,92 @@ label {
 }
 /* POP UP MENU MOBIL STYLING */
 
+.top3 {
+    text-align: center;
+}
+
+.lobehjulbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+.decksbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+.barsbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+.hjulbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+.hjelmbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+.knabeskytterbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
 #kompletboks {
     list-style: none;
     background-color: aqua;
+    height: 20%;
 }
 
 #deleboks {
     list-style: none;
     background-color: orange;
+    height: 20%;
 }
 
 #beskyttelseboks {
     list-style: none;
     background-color: palevioletred;
+    height: 20%;
 }
 
 #apparelboks {
     list-style: none;
     background-color: green;
+    height: 20%;
 }
 
 #rampeboks {
     list-style: none;
     background-color: darkgrey;
+    height: 20%;
 }
 
 .nyheder {
@@ -123,32 +205,26 @@ label {
 
 #top3lobehjul {
     list-style: none;
-    background-color: brown;
 }
 
 #top3deck {
     list-style: none;
-    background-color: orchid;
 }
 
 #top3bars {
     list-style: none;
-    background-color: wheat;
 }
 
 #top3hjul {
     list-style: none;
-    background-color: seagreen;
 }
 
 #top3hjelme {
     list-style: none;
-    background-color: crimson;
 }
 
 #top3knabeskyttere {
     list-style: none;
-    background-color: lavender;
 }
 
 #sporgsmal{
@@ -285,11 +361,91 @@ footer {
 /* GRID FOR HEADER */
 
 
+/* RESPONSIVE IMAGES TOP 3'S */
+    .top3 {
+        max-width: 100%;
+    }
+    
+    #prodigys8 {
+        width: 50%;
+    }
+    
+    #codycomplete {
+        width: 50%;
+    }
+
+    #erawancomplete {
+        width: 50%;
+    }
+    
+    #aosv5ray {
+        width: 50%;
+    }
+    
+    #codysigdeck {
+        width: 50%;
+    }
+    
+    #azteklucid {
+        width: 41%;
+    }
+    
+    #tenacity {
+        width: 50%;
+    }
+
+    #ygwbar {
+        width: 50%;
+    }
+    
+    #unionbars {
+        width: 50%;
+    }
+    
+    #blunthollows {
+        width: 50%;
+    }
+    
+    #honeycores {
+        width: 50%;
+    }
+    
+    #riverwheels {
+        width: 50%;
+    }
+    
+    #s1helmet {
+        width: 50%;
+    }
+
+    #rekdhelmet {
+        width: 50%;
+    }
+    
+    #triple8 {
+        width: 50%;
+    }
+    
+    #fusealpha {
+        width: 50%;
+    }
+    
+    #fusekneepads {
+        width: 50%;
+    }
+
+    #rekdkneepads {
+        width: 50%;
+    }
+/* RESPONSIVE IMAGES TOP 3'S */
+
+
 /* MEDIA QUERY FOR POP UP MENU FOR MOBIL */
 @media only screen and (max-width: 700px) {
     label {
         display: block;
         cursor: pointer;
+        background-color: deepskyblue;
     }
     
     .topmenumobil {
@@ -360,8 +516,12 @@ footer {
     .ikonmenu {
         max-width: 100%;
     }  
-/* RESPONSIVE IMAGES MOBILE */
+    
+    #azteklucid {
+        width: 55.5%;
+    }
 }
+/* RESPONSIVE IMAGES MOBILE */
 /* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR MOBIL */
 
 
@@ -417,9 +577,9 @@ footer {
 
     .ikonmenu {
         max-width: 100%;
-    }
-/* RESPONSIVE IMAGES TABLET */   
+    } 
 }
+/* RESPONSIVE IMAGES TABLET */ 
 /* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR TABLET */
 
 
@@ -480,8 +640,8 @@ footer {
     .ikonmenu {
         max-width: 100%;
     }
+}    
 /* RESPONSIVE IMAGES DESKTOP */
-}
 /* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR DESKTOP */
 
 
