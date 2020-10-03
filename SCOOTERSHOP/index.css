@@ -1,0 +1,822 @@
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1.1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;   
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:''; content:none;
+
+}
+/*  END RESET */
+
+
+/* STYLING GENERELT */
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #12006E;
+    color: dodgerblue;
+}
+
+.fronsegoder {
+    background-color: deepskyblue;
+    text-align: center;
+}
+
+#header {
+    display: inline-flex;
+    list-style: none;
+}
+
+h1 {
+    background-color: lawngreen;
+    text-align: center;
+}
+
+.betjening {
+    text-align: center;
+}
+
+.selvbetjening {
+    list-style: none;
+    display: inline-flex;
+}
+
+#sogefelt {
+    background-color: gainsboro;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.overstemenu {
+    text-align: center;
+    border: solid;
+    border-right: 0;
+    border-left: 0;
+    border-color: steelblue;
+}
+
+.menutop {
+    list-style: none;
+    display: inline-flex;    
+}
+
+/* POP UP MENU MOBIL STYLING */
+.menumobil {
+    background-color: aqua;
+    border: 3px solid black;
+}
+
+.popupmenu {
+    background-color: white;
+    margin: 0 30px 0 0;
+    position: absolute;
+}
+
+.popmenu li {
+    margin: 0 10px;
+}
+
+label {
+    font-size: 26px;
+    line-height: 300%;
+    display: none;
+    text-align: center;
+}
+
+#toggle {
+    display: none;
+}
+/* POP UP MENU MOBIL STYLING */
+
+.top3 {
+    text-align: center;
+}
+
+.lobehjulbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+.decksbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+.barsbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+.hjulbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+.hjelmbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+.knabeskytterbilled {
+    display: inline-flex;
+    border-top: solid;
+    border-right: 0;
+    border-left: 0;
+    border-width: thin;
+    border-color: steelblue;
+}
+
+#kompletboks {
+    list-style: none;
+    background-color: aqua;
+    height: 20%;
+}
+
+#deleboks {
+    list-style: none;
+    background-color: orange;
+    height: 20%;
+}
+
+#beskyttelseboks {
+    list-style: none;
+    background-color: palevioletred;
+    height: 20%;
+}
+
+#apparelboks {
+    list-style: none;
+    background-color: green;
+    height: 20%;
+}
+
+#rampeboks {
+    list-style: none;
+    background-color: darkgrey;
+    height: 20%;
+}
+
+#top3lobehjul {
+    list-style: none;
+}
+
+#top3deck {
+    list-style: none;
+}
+
+#top3bars {
+    list-style: none;
+}
+
+#top3hjul {
+    list-style: none;
+}
+
+#top3hjelme {
+    list-style: none;
+}
+
+#top3knabeskyttere {
+    list-style: none;
+}
+
+footer {
+    background-color: deepskyblue;
+    max-width: 100%;
+}
+
+#yt {
+    min-width: 20%;
+    max-width: 40%;
+    grid-area: yt;
+}
+
+#ig {
+    min-width: 20%;
+    max-width: 40%;
+    grid-area: ig;
+}
+
+#fb {
+    min-width: 20%;
+    max-width: 40%;
+    grid-area: fb;
+}
+
+#sporgsmal{
+    list-style: none;
+    grid-area: sporgsmal;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+#sup {
+    grid-area: supoverskrift;
+}
+
+.support {
+    list-style: none;
+    grid-area: sup;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+#scootshop {
+    grid-area: scootoverskrift;
+}
+
+.scootershop {
+    list-style: none;
+    grid-area: scootershop;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+#jurid {
+    grid-area: juridoverskrift;
+}
+
+.juridisk {
+    list-style: none;
+    grid-area: juridisk;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+#social {
+    display: inline-flex;
+    grid-area: social;
+}
+
+/* STYLING GENERELT */
+
+
+
+/* NYHEDER SLIDESHOW */
+.altnyt {
+    max-width: 100%;
+    max-height: 100%;
+    grid-area: altnyt;
+}
+
+.slidershow {
+    max-width: 100%;
+    height: 490px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nyhednavigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 500%;
+    display: flex;
+}
+
+.slide {
+    width: 100%;
+    transition: 0.6s;
+}
+
+.slide img{
+    max-width: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 6.5%;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -27%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: 20%;
+}
+
+/* NYHEDER SLIDESHOW */
+
+
+/* GRID AREAS */
+.fronsegoder {
+    grid-area: header;
+}
+    
+#overskrift {
+    grid-area: titel;
+}
+
+.betjening {
+    grid-area: selvbetjening;
+}
+
+.overstemenu {
+    grid-area: overstemenu;
+}
+
+.menumobil {
+    grid-area: popupmenu;
+}
+
+.menuleft {
+    grid-area: menuleft;
+}
+
+#kompletboks {
+    grid-area: komplet;
+}
+
+#deleboks {
+    grid-area: dele;
+}
+
+#beskyttelseboks {
+    grid-area: beskyttelse;
+}
+
+#apparelboks {
+    grid-area: apparel;
+}
+
+#rampeboks {
+    grid-area: rampe;
+}
+
+
+slider {
+    grid-area: nyheder;
+}
+
+.top3 {
+    grid-area: top3;
+}
+
+#top3lobehjul {
+    grid-area: top3lobehjul;
+}
+
+#top3deck {
+    grid-area: top3deck;
+}
+
+#top3bars {
+    grid-area: top3bars;
+}
+
+#top3hjul {
+    grid-area: top3hjul;
+}
+
+#top3hjelme {
+    grid-area: top3hjelme;
+}
+
+#top3knabeskyttere {
+    grid-area: top3knabeskyttere;
+}
+
+footer {
+    grid-area: footer;
+}
+/* GRID AREAS */
+
+
+/* GRID AREAS FOR IKONER */
+#fragtikon {
+   grid-area: fragtikon;
+}
+#bytteretikon {
+    grid-area: bytteretikon;
+}
+#anmeldelseikon {
+    grid-area: anmeldelseikon;
+}
+#produkterikon {
+    grid-area: produkterikon;
+}
+/* GRID AREAS FOR IKONER */
+
+
+/* GRID FOR HEADER */
+#header {
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+    grid-gap: 8em;
+    grid-template-areas:
+        "fragtikon bytteretikon anmeldelseikon produkterikon";
+}
+/* GRID FOR HEADER */
+
+
+/* GRID FOR FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 0fr);
+    grid-template-areas: 
+        "sporgsmal sporgsmal sporgsmal"
+        "supoverskrift scootoverskrift juridoverskrift"
+        "sup scootershop juridisk"
+        "social social social";
+}
+
+.padding {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+/* GRID FOR FOOTER */
+
+
+/* RESPONSIVE IMAGES TOP 3'S */
+    .top3 {
+        max-width: 100%;
+    }
+    
+    #prodigys8 {
+        width: 50%;
+    }
+    
+    #codycomplete {
+        width: 50%;
+    }
+
+    #erawancomplete {
+        width: 50%;
+    }
+    
+    #aosv5ray {
+        width: 50%;
+    }
+    
+    #codysigdeck {
+        width: 50%;
+    }
+    
+    #azteklucid {
+        width: 41%;
+    }
+    
+    #tenacity {
+        width: 50%;
+    }
+
+    #ygwbar {
+        width: 50%;
+    }
+    
+    #unionbars {
+        width: 50%;
+    }
+    
+    #blunthollows {
+        width: 50%;
+    }
+    
+    #honeycores {
+        width: 50%;
+    }
+    
+    #riverwheels {
+        width: 50%;
+    }
+    
+    #s1helmet {
+        width: 50%;
+    }
+
+    #rekdhelmet {
+        width: 50%;
+    }
+    
+    #triple8 {
+        width: 50%;
+    }
+    
+    #fusealpha {
+        width: 50%;
+    }
+    
+    #fusekneepads {
+        width: 50%;
+    }
+
+    #rekdkneepads {
+        width: 50%;
+    }
+/* RESPONSIVE IMAGES TOP 3'S */
+
+
+/* MEDIA QUERY FOR POP UP MENU FOR MOBIL */
+@media only screen and (max-width: 700px) {
+    label {
+        display: block;
+        cursor: pointer;
+        background-color: deepskyblue;
+    }
+    
+    .topmenumobil {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    
+    .topmenumobil li {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    
+    #toggle:checked + .topmenumobil {
+        display: block;
+    }
+    
+}
+/* MEDIA QUERY FOR POP UP MENU FOR MOBIL */
+
+
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR MOBIL */
+@media screen and (max-width: 700px) {
+    #grid {
+        display: grid;
+            grid-template-columns: 10% 90%;
+            grid-template-rows: (5, 1fr);
+            grid-gap: 5px;
+            grid-template-areas: 
+                "header header"
+                "popupmenu selvbetjening"
+                "altnyt altnyt"
+                "top3 top3"
+                "footer footer";
+        } 
+    
+    #overskrift {
+            display: none;
+        }
+    
+    .menuleft {
+            display: none;
+        }  
+    
+    .overstemenu {
+        display: none;
+    }
+    
+    #yt {
+        min-width: 20%;
+        max-width: 40%;
+        grid-area: yt;
+        }   
+
+    #ig {
+        min-width: 20%;
+        max-width: 40%;
+        grid-area: ig;
+        }
+
+    #fb {
+        min-width: 20%;
+        max-width: 40%;
+        grid-area: fb;
+        }
+    
+/* RESPONSIVE IMAGES MOBILE */
+    .fronsegoder {
+    width: 100%;
+    }
+    
+    .ikonheader {
+        max-width: 150%;
+    }
+
+    .betjening {
+        width: 100%;
+    }
+
+    .ikonbetjening {
+        max-width: 90%;
+    }
+
+    .ikonmenu {
+        max-width: 100%;
+    }  
+    
+    #azteklucid {
+        width: 55.5%;
+    }
+}
+/* RESPONSIVE IMAGES MOBILE */
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR MOBIL */
+
+
+
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR TABLET */
+@media screen and (min-width: 700px) {
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 5px;
+        grid-template-areas:
+            "header header header"
+            "selvbetjening selvbetjening selvbetjening"
+            "overstemenu overstemenu overstemenu"
+            "menuleft altnyt altnyt"
+            "menuleft top3 top3"
+            "menuleft top3 top3"
+            "menuleft top3 top3"
+            "footer footer footer";
+    }
+    
+/* SÆRLIGE DISPLAYS */   
+    #overskrift {
+        display: none;
+    }
+    
+        .menumobil {
+        display: none;
+    }
+/* SÆRLIGE DISPLAYS */ 
+    
+/* RESPONSIVE IMAGES TABLET */
+    .fronsegoder {
+    width: 100%;
+    }
+    
+    .ikonheader {
+        max-width: 50%;
+    }
+
+    .betjening {
+        width: 100%;
+    }
+
+    .ikonbetjening {
+        max-width: 100%;
+    }
+
+    .overstemenu {
+        width: 100%;
+    }
+
+    .ikonmenu {
+        max-width: 100%;
+    } 
+}
+/* RESPONSIVE IMAGES TABLET */ 
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR TABLET */
+
+
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR DESKTOP */
+@media screen and (min-width: 1000px) {
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1.5fr 0.8fr 0.4fr 1.5fr 1fr 1fr 0.3fr;
+        grid-gap: 5px;
+        grid-template-areas:
+            "header header header header"
+            "titel titel titel titel"
+            "selvbetjening selvbetjening selvbetjening selvbetjening"
+            "overstemenu overstemenu overstemenu overstemenu"
+            "menuleft altnyt altnyt altnyt"
+            "menuleft altnyt altnyt altnyt"
+            "menuleft top3 top3 top3"
+            "menuleft top3 top3 top3"
+            "footer footer footer footer";
+    }
+    
+/* SÆRLIGE DISPLAYS */
+    .menuleft {
+        display: block;
+    }
+    
+    #overskrift {
+        display: block;
+    }
+    
+    .menumobil {
+        display: none;
+    }
+/* SÆRLIGE DISPLAYS */
+    
+/* RESPONSIVE IMAGES DESKTOP */    
+    .fronsegoder {
+    width: 100%;
+    }
+    
+    .ikonheader {
+        max-width: 25%;
+    }
+
+    .betjening {
+        width: 100%;
+    }
+
+    .ikonbetjening {
+        max-width: 100%;
+    }
+
+    .overstemenu {
+        width: 100%;
+    }
+
+    .ikonmenu {
+        max-width: 100%;
+    }
+    
+    #yt {
+        min-width: 10%;
+        max-width: 10%;
+        grid-area: yt;
+        }   
+
+    #ig {
+        min-width: 10%;
+        max-width: 10%;
+        grid-area: ig;
+        }
+
+    #fb {
+        min-width: 10%;
+        max-width: 10%;
+        grid-area: fb;
+        }
+}    
+/* RESPONSIVE IMAGES DESKTOP */
+/* GRID FOR HELE SIDEN. ALTSÅ CONTAINERNE OG RESPONSIV GRID FOR DESKTOP */
+
+
+
